@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getGallery();
-  }
+  }//END componentDidMount
 
   // Get data from the server
   getGallery = () => {
@@ -21,11 +21,11 @@ class App extends Component {
         this.setState({
           ourImages: response.data
         }, function () {
-          console.log(this.state);
-      }//end function
-      )// end setState
-      })
-  }
+          console.log('State - after getGallery:', this.state);
+      }//END function
+    )//END setState
+    })//END .then
+  };//END getGallery
 
 
 
@@ -41,8 +41,8 @@ class App extends Component {
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
       </div>
-    );
-  }
-}
+    );//END return
+  }//END render
+}//END App
 
 export default App;
