@@ -1,7 +1,36 @@
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
+
+  state = {
+    ourImages: [],
+    //areAssembled: false
+  };
+
+  componentDidMount() {
+    this.getGallery();
+  }
+
+  // Get data from the server
+  getGallery = () => {
+    axios.get('/gallery')
+      .then( response => {
+        // store data into state after it comes back
+        this.setState({
+          ourImages: response.data
+        }, function () {
+          console.log(this.state);
+      }//end function
+      )// end setState
+      })
+  }
+
+
+
+
+
   render() {
     return (
       <div className="App">
