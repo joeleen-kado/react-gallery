@@ -28,6 +28,12 @@ class App extends Component {
     })//END .then
   };//END getGallery
 
+  judgement = () => {
+      console.log('Make a Judgement');
+      this.setState({
+        liked : false
+      })
+    }
 
 
 
@@ -41,7 +47,9 @@ class App extends Component {
         <br/>
         <p>Gallery goes here</p>
         <img src="images/goat_small.jpg"/>
-        <GalleryList imageProp={this.state.ourImages}/>
+        <GalleryList imageArrayProp={this.state.ourImages}
+                       judgementProp={this.judgement}
+        />
       </div>
     );//END return
   }//END render
