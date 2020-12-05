@@ -6,8 +6,8 @@ import GalleryList from '../GalleryList/GalleryList.js';
 class App extends Component {
 
   state = {
-    ourImages: [],
-    //areAssembled: false
+    ourImages: []
+    //liked : false
   };
 
   componentDidMount() {
@@ -28,12 +28,12 @@ class App extends Component {
     })//END .then
   };//END getGallery
 
-  judgement = () => {
-      console.log('Make a Judgement');
-      this.setState({
-        liked : false
-      })
-    }
+  // judgement = () => {
+  //     console.log('Make a Judgement');
+  //     this.setState({
+  //       //liked : true
+  //     })
+  //   }
 
 
 
@@ -45,10 +45,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br/>
-        <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        {/* // <p>Gallery goes here</p>
+         // <img src="images/goat_small.jpg"/>*/}
         <GalleryList imageArrayProp={this.state.ourImages}
-                       judgementProp={this.judgement}
+                       // judgementProp={this.judgement}
         />
       </div>
     );//END return

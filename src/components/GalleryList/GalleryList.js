@@ -10,17 +10,17 @@ render(){
       <div>
       <h1>hello from GalleryList</h1>
       
-      {/* collection of imates */}
+      {/* collection of images */}
                 { this.props.imageArrayProp.map((image) => 
                         // The left side of the = is the name of the prop
                         // It must match this.props.x in the component
                         // The key prop must be at this level, not in component
                         <GalleryItem imageProp={image} key={image.id} 
-                                     judgementExtensionProp={this.props.judgementProp} 
                         />
                         )
                       }
-      
+                       {/* judgementExtensionProp={this.props.judgementProp} */} 
+
       </div>
       
       ) // end return
