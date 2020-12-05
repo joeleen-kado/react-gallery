@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList.js';
+
+
+
 
 class App extends Component {
 
@@ -21,17 +25,13 @@ class App extends Component {
         this.setState({
           ourImages: response.data
         }, function () {
-          console.log(this.state);
+          console.log(`State - after getGallery: ${this.state}`);
       }//end function
       )// end setState
       })
   }
 
-
-
-
-
-  render() {
+    render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -39,7 +39,11 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <img src="images/goat_small.jpg"/> 
+        <GalleryList imageProp={this.state.ourImages} 
+               />
+      {/* heroesAssemble={this.heroesAssemble} */}
+
       </div>
     );
   }
