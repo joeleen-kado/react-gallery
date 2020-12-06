@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     ourImages: []
     //liked : false
-  };
+  };//END state
 
   componentDidMount() {
     this.getGallery();
