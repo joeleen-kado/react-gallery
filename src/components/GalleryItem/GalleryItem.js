@@ -4,12 +4,12 @@ class GalleryItem extends Component{
   state = ({
     likes  : 0,
     showPicture : false
-  })
+  })//END state
   
   togglePicture = () => {
       this.setState({
         showPicture: !this.state.showPicture // flip the boolean using ! NOT
-      })
+      })//END setState
     };//END togglePicture
 
   render(){
