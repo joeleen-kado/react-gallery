@@ -25,12 +25,12 @@ class GalleryItem extends Component{
 
           
           
-          <h4>{image.description}</h4>
       
       
         
-        
-          <img src={this.state.showPicture && image.path }/>
+        {this.state.showPicture? <img src={image.path}/> :   <h4>{image.description}</h4>}
+
+        {/*  <img src={this.state.showPicture && image.path }/> */}
         
           {/* <img src={image.path}/>  */}
         
