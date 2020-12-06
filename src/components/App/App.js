@@ -4,9 +4,7 @@ import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList.js';
 
 class App extends Component {
-
   state = {
-    
     ourImages: []
     //liked : false
   };
@@ -40,26 +38,14 @@ class App extends Component {
         console.log('Error:', error);
       });
     this.getGallery();
-  };
-
-  
-  
-  
-  
-  
-  
-  
-  // judgement = () => {
+  };//END likePut
+// judgement = () => {
   //     console.log('Make a Judgement');
   //     this.setState({
   //       //liked : true
   //     })
   //   }
-
-
-
-
-  render() {
+render() {
     return (
       <div className="App">
         <header className="App-header">
@@ -75,5 +61,4 @@ class App extends Component {
     );//END return
   }//END render
 }//END App
-
 export default App;
