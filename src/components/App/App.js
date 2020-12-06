@@ -6,6 +6,7 @@ import GalleryList from '../GalleryList/GalleryList.js';
 class App extends Component {
 
   state = {
+    
     ourImages: []
     //liked : false
   };
@@ -28,6 +29,26 @@ class App extends Component {
     })//END .then
   };//END getGallery
 
+  likePut = () => {
+    axios
+      .put('/gallery/like/:id')
+      .then((response) => {
+        console.log('Response:', response);
+      })
+      .catch((error) => {
+        alert('WHOOPS!');
+        console.log('Error:', error);
+      });
+    this.getGallery();
+  };
+
+  
+  
+  
+  
+  
+  
+  
   // judgement = () => {
   //     console.log('Make a Judgement');
   //     this.setState({
@@ -48,7 +69,7 @@ class App extends Component {
         {/* // <p>Gallery goes here</p>
          // <img src="images/goat_small.jpg"/>*/}
         <GalleryList imageArrayProp={this.state.ourImages}
-                       // judgementProp={this.judgement}
+                        likePutProp={this.likePut}
         />
       </div>
     );//END return

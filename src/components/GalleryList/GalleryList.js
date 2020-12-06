@@ -16,10 +16,13 @@ render(){
                         // It must match this.props.x in the component
                         // The key prop must be at this level, not in component
                         <GalleryItem imageProp={image} key={image.id} 
-                        />
+                                   likePutExtensionProp={this.props.likePutProp} 
+
+
+                />
+                      
                         )
                       }
-                       {/* judgementExtensionProp={this.props.judgementProp} */} 
 
       </div>
       
