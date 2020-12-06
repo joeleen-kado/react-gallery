@@ -3,14 +3,17 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: lavender;
   height: 70px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  background: black;
+  color: pink;
+  box-shadow: 0 5px 5px hotpink;
 }
 
 .App-intro {
@@ -20,4 +23,16 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+img {
+  border: 5px solid salmon;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 30%; 
+}
+
+body {
+  background-color: turquoise;
 }
