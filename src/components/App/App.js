@@ -27,9 +27,9 @@ class App extends Component {
     })//END .then
   };//END getGallery
 
-  likePut = () => {
+  likePut = (event, imageid) => {
     axios
-      .put('/gallery/like/:id')
+      .put(`/gallery/like/${imageid}`)
       .then((response) => {
         console.log('Response:', response);
       })
