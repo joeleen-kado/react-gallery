@@ -1,5 +1,0 @@
-if in start it says 'build' - do not run npm start
-
-
-npm run client
-npm run server
