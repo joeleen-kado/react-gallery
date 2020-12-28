@@ -1,5 +1,4 @@
 const galleryItems = [
-    { id: '1', path: "images/joelleObject.jpg", title: 'Joelle.Object', description: 'Joelle as an object.', likes: 0 },
     //{ id: '2', path: "images/blackAndWhite19.jpg", title: 'Black and White 2019', description: 'Every year I showcase at the Hallberg Cener for the Arts, in Wyoming, MN.', likes: 0 },
     //{ id: '3', path: "images/meAtTrail.jpg", title: 'Prairie Trail', description: 'A trail in Wyoming, MN.', likes: 0 },
     { id: '2', path: "images/octopus.jpg", title: 'Octopus', description: 'My inky Octopus.', likes: 0 },
