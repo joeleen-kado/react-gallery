@@ -11,7 +11,7 @@ _Duration: 15hrs_
 I am Full Stack Engineer. But overarching that--along with every other aspect of my life--, I am an artist. We artists rely on self advertisement, if the desire is to land work. The online Gallery enables the Visual Artist/Full Stack Engineer to have a consistent and efficient gallery of the entirety of their collection.
 
 ## Screen Shot
-![intro](public/images/screenShots/coolForSchool.jpg)
+![intro](public/images/screenShots/screenShot.png)
 
 ### Prerequisites
 
